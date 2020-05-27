@@ -1,0 +1,60 @@
+
+.Form{
+	position: absolute; left:5%; top: 5%; width: 50%
+	margin-right: 100px;
+}
+
+.list{
+	position: absolute; right:5%; top: 5%; width: 50%
+	
+
+}
+
+table.table2{
+	width: 100%;
+	text-align: center;
+}
+
+td.uno{
+	background-color: #d9d9d9;
+}
+
+td.dos{
+	background-color: #d9e1f4;
+}
+
+input{
+	background-color: transparent;
+	border: 0px;
+	width: 100%;
+}
+
+select{
+	background-color: transparent;
+	border: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+button{
+	margin-top: 20px;
+	width: 100%;
+	height: 30px;
+	color: #c7f4de;
+	background-color: #00b24e;
+	border: 0px;
+}
+
+thead{
+	background-color: #808080;
+	color: white;
+}
+
+td.unoN{
+	background-color: #ddebf6;
+}
+
+td.dosN{
+	background-color: #f2f2f2;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluacion</title>
+
+	<script type="text/javascript" src="./main.js">
+		
+	</script>
+	<link href="./style.css"
+      rel="stylesheet" type="text/css">
+</head>
+<body>
+	<Div class="Form">
+			<table class="table1" >
+				<tr>
+					<td class="uno">Nombre</td>
+					<td class="dos"><input type="text" onkeypress="return " onpaste="return false" required id="nameField" placeholder="Tu primer nombre" required value=""/></td>
+				</tr>
+				<tr>
+					<td class="uno">Apellido Paterno</td>
+					<td class="dos"><input type="text" required id="lastNDField" onkeypress="return " onpaste="return false"  placeholder="Apellido paterno" value=""/></td>
+				</tr>
+				<tr>
+					<td class="uno">Apellido Materno</td>
+					<td class="dos"><input type="text" required id="lastNMField" onkeypress="return " placeholder="Apellido materno" value=""/>
+				</tr>
+				<tr>
+					<td class="uno">Direccion</td>
+					<td class="dos"><input type="text" required id="direcField" onkeypress="return " placeholder="Direccion donde vives" value=""/></td>
+				</tr>
+				<tr>
+					<td class="uno">Region</td>
+					<td class="dos">
+						<select required id="regionField" onchange="setProv()">
+							<option value="false">
+								Seleccione una opción
+							</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="uno">Provincia</td>
+					<td class="dos">
+						<select required id="provField" onchange="setComuna()" >
+							<option value="false">
+								Seleccione una opción
+							</option>
+						</select>
+				</td>
+				</tr>
+				<tr>
+					<td class="uno">Comuna</td>
+					<td class="dos">
+						<select required id="comunaField" ><option value="false">
+								Seleccione una opción
+							</option></select>
+				</td>
+
+				</tr>
+				<tr><td ></td><td ><button id="boton" onclick="Llenado();">Agregar</button> </td></tr>
+			</table>
+<input type="hidden" id="valor"  value="1"/>
+	</div>
+
+	<div class="list">
+		<form method="post">
+			<table class="table2" id="tabla2" >
+				<thead>
+					<tr>
+					<td>Nombre</td>
+					<td>Apellido Paterno</td>
+					<td>Apellido Materno</td>
+					<td>Direccion</td>
+					<td>Comuna</td>
+					</tr>
+				</thead>
+				<tbody id="tableField">
+					
+				</tbody>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
